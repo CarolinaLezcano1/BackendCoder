@@ -5,8 +5,8 @@ class Usuario {
         this.mascotas = mascotas;
         this.libros = libros;
     }
-}
-
+    
+    
 getFullName(){
     return `Hola ${this.nombre} ${this.apellido}!`;
 }
@@ -21,17 +21,18 @@ countMascotas(){
 }
 
 addBook(nombre, autor){
-    return this.libros.splice(0, 0 {nombre : nombre, autor : autor})
+    return this.libros.splice(0, 0 {nombre : nombre, autor : autor});
 }
 
 getBookNames(){
     return this.libros.map(prop => prop.nombre)
 }
+}
 
 const usuario = new Usuario ("Elian", "Gonzalez", [{nombre: "El juego de las llaves"},{nombre: "Las hadas"}, ["Perro", "Gato"]])
 
 //Obtener nombre completo
-console.log(user.getFullName())
+console.log(usuario.getFullName())
 
 //Agregar mascota
 usuario.addMascotas("Loro")
